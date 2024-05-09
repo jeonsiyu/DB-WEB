@@ -1,3 +1,4 @@
+--primary key : 중복 불가
 Create table student_t (
     id varchar2(10) primary key, -- 학번 중복 x
     name varchar2(20) not null,
@@ -5,6 +6,7 @@ Create table student_t (
     tel varchar2(30) not null
 );
 
+-- drop : 테이블을 삭제하라
 drop table student_t;
 
 insert into student_t (id, name, age, tel)

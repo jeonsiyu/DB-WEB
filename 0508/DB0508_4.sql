@@ -26,7 +26,9 @@ select ename as "사원명" , salary as "인상전 급여", (salary*12)+100 as "연간 총 
      where salary > 2000 order by salary desc;
 -- 연간 총수입 : 급여*12 + 100(상여금)
 
---급여가 200~3000 사이에 포함되는 사원명, 급여 출력
+
+-- 자동 들여쓰기 CTRL+ F7
+-- 급여가 200~3000 사이에 포함되는 사원명, 급여 출력
 select ename, salary from employee
     where salary between 2000 and 3000;
 select ename, salary from employee
@@ -44,24 +46,47 @@ select  ename, deo from employee
     where deo=20 or deo=30  order by ename desc;
 select  ename, deo from employee
     where deo in(20,30) order by ename desc;
-
-
+    
 -- where ename like '%A%' => 이름 중에서 가운데가 A가 들어있는 경우 검색
 -- where ename like '_A%' => 이름 중에서 첫자는 아무 글자, 2번째 글자는 무조건 'A'
 
 -- 연습 문제 (숙제)
 
--- 1. 사원의 급여가 2000~3000 사이에 포함되고, 부서번호가 20또는 30인 사원명, 급여, 부서번호 출력 - 이름으로 오른차순 정렬
+-- 1. 사원의 급여가 2000~3000 사이에 포함되고, 부서번호가 20또는 30인 사원명, 급여, 부서번호 출력 - 이름으로 오름차순 정렬
+select ename, salary, dno from employee 
+    where salary between 2000 and 3000 and dno in(20,30)
+    order by ename asc;
 
 -- 2. 1981년도 입사한 사원명, 입사일 출력 - 입사일 기준으로 오름차순 정렬
+select ename, hiredate from employee
+    where hiredate in '81'
+    order by hiredate asc; 
+-- select ename, hiredate from employee
+--    where hiredate like '81%'
+--    order by hiredate asc; 
 
 -- 3. 관리자가 없는 사원명, 담당업무 출력
+select ename,job from employee
+    where manager is null;
 
--- 4. 상여금을 받을 수 있는 상원명, 급여 , 상여금 출력 - 급여 기준으로 내림차순  정렬
+-- 4. 상여금을 받을 수 있는 사원명, 급여 , 상여금 출력 - 급여 기준으로 내림차순  정렬
+select ename, salary, commission from employee 
+    where commission is not null
+    order by salary desc; 
+--select ename, salary, commission from employee 
+-- where commission is not null
+-- order by salary desc; 
+
 
 -- 5. 이름의 3번째 문자가 'B'인 모든 사원명 출력
+select ename from employee
+    where ename like '__B%';  
 
--- 6. 이름에 A와 E를 모두 포함하는 사원명, 급여 담당업무 출력
+-- 6. 이름에 A와 E를 모두 포함하는 사원명, 급여, 담당업무 출력
+select ename, salary, job from employee
+    where ename like '%A%' and ename like '%E%';
 
 -- 7. 담당업무가 사무원 또는 영업사원이면서 급여가 950. 1300. 1600이 아닌 사원명, 담당업무, 급여 출력하기 - 사원명으로 내림차순 정렬
-
+Select ename, job, salary from employee
+    where job = salesman or job = clerk and salary not in (950,1300,1600) 
+    order by ename desc; 

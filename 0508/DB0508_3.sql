@@ -29,7 +29,7 @@ select * from person_t where name='홍길동';
 select * from person_t where name='홍길동' and age=20;
 select * from person_t where name='홍길동' or age=20;
 select * from person_t where name is null; -- null 값을 검색 
-select * from person_t where name is not null; -- null 값을 검색 
+select * from person_t where name is not null; -- null 값이 아닌 경우를 검색 
 select * from person_t where name like '&길&'; -- 이름 가운데 '길'이 포함된 정보 
 
 delete from ptrsoon_t where name= '홍길동';

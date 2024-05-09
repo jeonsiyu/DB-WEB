@@ -73,6 +73,7 @@ INSERT INTO SALGRADE VALUES (3,1401,2000);
 INSERT INTO SALGRADE VALUES (4,2001,3000);
 INSERT INTO SALGRADE VALUES (5,3001,9999);
 
--- create, intsert, delete, update
+-- create, intsert, delete, update -> 데이터를 변화시키는 명령어
+-- COMMIT : DB에 최종 적용 -> 데이터를 변화시키는 명령어는 COMMIT을 하는게 좋음
 COMMIT;
 

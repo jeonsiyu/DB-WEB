@@ -1,0 +1,38 @@
+< 그룹 함수 >
+
+SUM : 그룹의 누적 합계 반환
+AVG : 그룹의 평균으 반환
+COUNT : 그룹의 총 개수를 반환 
+MAX : 그룹의 총 개수를 반환
+MIN : 그룹의 최소값을 반환
+
+-> ex) SUM( )
+
+그룹 함수는 NULL 값을 자동적으로 무시함
+round : 반올림해주는 함수
+
+group by : ~별로 묶어서 사용할 때 
+--> 그룹을 쓰기 위함이므로 그룹 함수를 무조건 하나는 써야함 
+* 꿀팁! group by A가 나오면 select A도 같이 나옴
+
+order dy dno, job;  -- 앞에꺼를 기준으로 정렬
+
+-- null 값은 무시
+-- 총합
+-> sum
+Select sum(commission) as "커미션 총액" from employee;
+
+-- 데이터 개수
+->count
+Select count(*) as "사원의 수" from employee;
+
+-- 중복 제거
+-> distinct
+Select count(distinct job) as "작업종류의 개수" from employee;
+
+-- group by : 특정 컬럼을 기준으로 그룹별로 나눌 때 사용
+-- select 컬럼명, 그룹 함수 from 테이블명 where 조건 group by 컬럼명;
+
+-- 그룹 조건 : havnig <-> WHERE 가 다름
+having은 그룹에 대한 조건을 말하고 where은 select의 조건을 말함
+
