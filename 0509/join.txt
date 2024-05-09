@@ -1,0 +1,26 @@
+-- join : 분리된 테이블을 합쳐서 검색
+
+테이블을 분리시키는 이유
+- '정규화'라는 기법이 있음 -> 튜닝 같은..
+- DB의 성능을 높이고, 테이터의 중복을 피하기 위해(?)
+
+FOREIGN : F.K 참조키
+
+JOIN의 특성 : 특정 테이블에 기본키가 다른 테이블에 참조키로 되어있어야 한다.
+-> 테이블을 구성할 때 기본키와 참조키 잘 보기
+
+-- 조인 종류: 내부 조인(inner join), 외부조인(outer join)
+-- 조인을 사용하여 한꺼번에 출력 (equl ={동등}조인)-> 내부 조인
+
+select * from employee, department
+    where employee.dno = department.dno;
+            -- F.K와의      P.K 관계가 있어야함 
+            
+select employee.ename, department.dname, employee.dno 
+        from employee, department
+        where employee.dno = department.dno;
+        
+--테이블명이 길 경우 별칭 사용
+select e.ename, d.dname, e.dno, d.loc
+        from employee e, department d
+        where e.dno = d.dno and e.eno=7788;

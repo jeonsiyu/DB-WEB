@@ -41,17 +41,20 @@ select MAX(salary) as "최고 액", min(salary) as "최저 액",
 select dno, count(*), sum(salary) from employee
     group by dno having count(*) > 4;
 
--- 3. 부서별로 담당업무가 동일한 사원의 수 출력
+-- 3. 부서별로 담당업무가 동일한 사원의 수 출력 부서기준으로 내림차순 정렬
 select dno, job, count(*) from employee  
-    group by dno, job ;
+    group by dno, job 
+    order by dno desc;
 
 -- 4. 업무별 사원의 최저 급여 출력하되 관리자를 알수 없는 사원과 최저 급여가 $2000 미만인 그룹은 제외하여 출력 급여기준으로 내림차순으로 정렬
-select job, min(salary) as 최저급여 from employee
-    where MANAGER is null 
-    having min(salary) < 2000
-    group by job order by min(salary) desc;
+select job, min(salary) from employee
+    where manager is not null 
+    group by job having not min(salary) < 2000 order by min(salary) desc;
+    
 
 -- 5. 각 부서에 대해 부서번호, 사원수, 부서 내의 모든 사원의 평균 급여 출력, 부서기준으로 내림차순 정렬
 select dno as 부서번호, count(*) as 사원수, round(avg(salary)) as 평균급여 from employee
     group by dno
     order by dno desc;
+    
+    
