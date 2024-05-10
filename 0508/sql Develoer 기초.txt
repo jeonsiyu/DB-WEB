@@ -70,8 +70,8 @@ commit - 모든 데이터를 임시가 아닌 실제 데이터 베이스에 영�
 
 정렬 단축키 컨트롤+F7
 
--- order by salary desc : 급여순으로 내림차순 
--- order by salary asc : 급여순으로 오름차순(asc 생략가능)
+-- order by ____ desc : 급여순으로 내림차순 
+-- order by ____ asc : 급여순으로 오름차순(asc 생략가능)
 
 데이터가 존재하지 않는것은 검색 조건에 맞지 않기 때문에
 
