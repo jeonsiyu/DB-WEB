@@ -45,16 +45,20 @@ select ename, job, salary from employee
     
 -- 4. 부서별 최소 급여를 받는 사원명, 급여, 부서번호 출력
 select ename, salary, dno from employee
-    where (dno,salary) = (select dno, min(salary) from employee group by dno);
+    where salary in (select min(salary) from employee group by dno);
     
 -- 5. 4번 문제에서 부서명, 근무지를 추가하여 출력 - 조인 사용
+select e.ename, e.esalary, e.dno, d.dname ,d.loc from employee e,department d  
+    where e.dno=d.dno and salary
+    in (select min(min(salary) from employee group by dno);
+
 select ename, salary, dno, dname ,loc 
     from employee natural join department
     where (dno,salary) in (select dno, min(salary) from employee group by dno);
     
--- 6. 담당업무가 ANALYST인 사원보다 급여가 적으면서 업무가 ANALYST가 아닌 사번, 이름, 담당 업무, 급여 출력 - 사번으로 오름차순 정렬
+-- 6. 담당업무가 ANALYST인 사원보다 급여가 적으면서 업무가 SALESMAN이 아닌 사번, 이름, 담당 업무, 급여 출력 - 사번으로 오름차순 정렬
 select eno, ename, JOB , salary from employee 
-    where salary < all(select salary from employee where job='ANALYST') and job <> 'ANALYST'
+    where salary < all(select salary from employee where job='ANALYST') and job <> 'SALESMAN'
     order by eno asc;    
 
 -- 7. 직속 상관이 없는 직원 출력 
@@ -76,15 +80,34 @@ select eno, ename, salary from employee
     where eno <> all(select manager from employee where manager is not null);
 
 -- 10. blake 동일한 부서에 속한 사원명, 입사일 출력, blake는 출력 제외
+select ename, hiredate from employee  
+    where dno = (select dno employee where ename='BLAKE') and ename <> 'BLAKE';
 
 -- 11. 근무지가 DALLAS인 사원명, 부서번호, 담당업무 출력 - 오름차순
 --      서브 쿼리, 조인 2가지 방법
+-- [서브쿼리]
+select ename, dno, job from employee where dno=
+    (select dno from department where loc='DALLAS')
+    order by ename asc;
+    
+select e.ename, e.dno, e job from employee e, depatment d
+    where e.dno = d.dno and d. loc= 'DALLAS' order by ename asc;
 
 -- 12. SCOTT과 동일한 부서에서 근무하는 사원명, 부서번호 출력
-
+select ename, dno, from employee where dno=
+    (select dno from employee where ename='SCOTT');
+    
 -- 13. 12번 문제에서 부서명, 근무지역 출력 - 서브쿼리+ 조인 사용 (등등 자연 조인 각각 사용)
+select e.ename, e.dno from employee e, departement d
+    where e.dno=d.dno and e.dno = (select dno from employee where nemae= 'SCOTT'
 
+select ename, dno, dname, loc from employes natural join department
+    where dno=(select dno from employee where ename= 'SCOTT');
+    
 -- 14. 담당업무 별로 업무가 ANALYST인 사원보다 급여가 적고, 업무가 CLERK가 아닌 사원들 중에서 담당업무, 최고 급여 출력
+select job max(salary) from employee where salary < 
+    all (select salary from employee where job='ANALYST')
+    and job <> 'CLERK' group by job;
 
 
 

@@ -79,7 +79,7 @@ select e.ename as "사원", m.ename as "관리자"
 -- 4. 커미션을 받을 수 있는 사원명, 부서명, 근무지 출력 -사원명 오름차순 정렬
 select e.ename, d.dname, d.loc
     from employee e, department d
-    where e.dno = d.dno and commission >= 0 
+    where e.dno = d.dno and commission > 0 
     order by e.ename asc;
 
 select ename, dname, loc
