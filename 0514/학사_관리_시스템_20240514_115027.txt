@@ -1,0 +1,226 @@
+﻿-- 테이블 순서는 관계를 고려하여 한 번에 실행해도 에러가 발생하지 않게 정렬되었습니다.
+
+-- dpartment Table Create SQL
+-- 테이블 생성 SQL - dpartment
+CREATE TABLE dpartment
+(
+    d_departmentID    VARCHAR2(20)    NOT NULL, 
+    d_name            VARCHAR(20)     NOT NULL, 
+    d_office          VARCHAR(20)     NOT NULL, 
+    d_tel             VARCHAR(20)     NOT NULL, 
+     PRIMARY KEY (d_departmentID)
+);
+
+-- 테이블 Comment 설정 SQL - dpartment
+COMMENT ON TABLE dpartment IS '학과';
+
+-- 컬럼 Comment 설정 SQL - dpartment.d_departmentID
+COMMENT ON COLUMN dpartment.d_departmentID IS '학과번호';
+
+-- 컬럼 Comment 설정 SQL - dpartment.d_name
+COMMENT ON COLUMN dpartment.d_name IS '학과명';
+
+-- 컬럼 Comment 설정 SQL - dpartment.d_office
+COMMENT ON COLUMN dpartment.d_office IS '사무실';
+
+-- 컬럼 Comment 설정 SQL - dpartment.d_tel
+COMMENT ON COLUMN dpartment.d_tel IS '전화번호';
+
+
+-- professor Table Create SQL
+-- 테이블 생성 SQL - professor
+CREATE TABLE professor
+(
+    p_professorID      VARCHAR2(10)    NOT NULL, 
+    p_identID          VARCHAR2(20)    NOT NULL, 
+    p_Name             VARCHAR(20)     NOT NULL, 
+    p_add              VARCHAR(50)     NOT NULL, 
+    p_tel              VARCHAR2(20)    NOT NULL, 
+    p_position         VARCHAR2(20)    NOT NULL, 
+    p_yearappointed    VARCHAR2(10)    NOT NULL, 
+    d_departmentID     VARCHAR2(20)    NOT NULL, 
+     PRIMARY KEY (p_professorID)
+);
+
+-- 테이블 Comment 설정 SQL - professor
+COMMENT ON TABLE professor IS '교수';
+
+-- 컬럼 Comment 설정 SQL - professor.p_professorID
+COMMENT ON COLUMN professor.p_professorID IS '교수번호';
+
+-- 컬럼 Comment 설정 SQL - professor.p_identID
+COMMENT ON COLUMN professor.p_identID IS '주민등록번호';
+
+-- 컬럼 Comment 설정 SQL - professor.p_Name
+COMMENT ON COLUMN professor.p_Name IS '이름';
+
+-- 컬럼 Comment 설정 SQL - professor.p_add
+COMMENT ON COLUMN professor.p_add IS '주소';
+
+-- 컬럼 Comment 설정 SQL - professor.p_tel
+COMMENT ON COLUMN professor.p_tel IS '전화번호';
+
+-- 컬럼 Comment 설정 SQL - professor.p_position
+COMMENT ON COLUMN professor.p_position IS '직위';
+
+-- 컬럼 Comment 설정 SQL - professor.p_yearappointed
+COMMENT ON COLUMN professor.p_yearappointed IS '임용년도';
+
+-- 컬럼 Comment 설정 SQL - professor.d_departmentID
+COMMENT ON COLUMN professor.d_departmentID IS '학과번호';
+
+-- Foreign Key 설정 SQL - professor(d_departmentID) -> dpartment(d_departmentID)
+ALTER TABLE professor
+    ADD CONSTRAINT FK_professor_d_departmentID_dpartment_d_departmentID FOREIGN KEY (d_departmentID)
+        REFERENCES dpartment (d_departmentID) ;
+
+-- Foreign Key 삭제 SQL - professor(d_departmentID)
+-- ALTER TABLE professor
+-- DROP CONSTRAINT FK_professor_d_departmentID_dpartment_d_departmentID;
+
+
+-- student Table Create SQL
+-- 테이블 생성 SQL - student
+CREATE TABLE student
+(
+    s_studentID       VARCHAR2(20)    NOT NULL, 
+    s_identID         VARCHAR2(20)    NOT NULL, 
+    s_Name            VARCHAR2(20)    NOT NULL, 
+    s_add             VARCHAR2(50)    NOT NULL, 
+    s_tel             VARCHAR2(20)    NOT NULL, 
+    s_grade           VARCHAR2(10)    NOT NULL, 
+    d_departmentID    VARCHAR2(20)    NOT NULL, 
+     PRIMARY KEY (s_studentID)
+);
+
+-- 테이블 Comment 설정 SQL - student
+COMMENT ON TABLE student IS '학생';
+
+-- 컬럼 Comment 설정 SQL - student.s_studentID
+COMMENT ON COLUMN student.s_studentID IS '학번';
+
+-- 컬럼 Comment 설정 SQL - student.s_identID
+COMMENT ON COLUMN student.s_identID IS '주민등록번호';
+
+-- 컬럼 Comment 설정 SQL - student.s_Name
+COMMENT ON COLUMN student.s_Name IS '이름';
+
+-- 컬럼 Comment 설정 SQL - student.s_add
+COMMENT ON COLUMN student.s_add IS '주소';
+
+-- 컬럼 Comment 설정 SQL - student.s_tel
+COMMENT ON COLUMN student.s_tel IS '전화번호';
+
+-- 컬럼 Comment 설정 SQL - student.s_grade
+COMMENT ON COLUMN student.s_grade IS '학년';
+
+-- 컬럼 Comment 설정 SQL - student.d_departmentID
+COMMENT ON COLUMN student.d_departmentID IS '학과번호';
+
+-- Foreign Key 설정 SQL - student(d_departmentID) -> dpartment(d_departmentID)
+ALTER TABLE student
+    ADD CONSTRAINT FK_student_d_departmentID_dpartment_d_departmentID FOREIGN KEY (d_departmentID)
+        REFERENCES dpartment (d_departmentID) ;
+
+-- Foreign Key 삭제 SQL - student(d_departmentID)
+-- ALTER TABLE student
+-- DROP CONSTRAINT FK_student_d_departmentID_dpartment_d_departmentID;
+
+
+-- course Table Create SQL
+-- 테이블 생성 SQL - course
+CREATE TABLE course
+(
+    c_cousreID       VARCHAR2(50)    NOT NULL, 
+    c_name           VARCHAR(20)     NOT NULL, 
+    c_credit         NUMBER          NOT NULL, 
+    c_year           VARCHAR(20)     NOT NULL, 
+    c_semester       VARCHAR(20)     NOT NULL, 
+    c_time           VARCHAR(20)     NOT NULL, 
+    c_capacity       NUMBER          NOT NULL, 
+    p_professorID    VARCHAR2(10)    NOT NULL, 
+     PRIMARY KEY (c_cousreID)
+);
+
+-- 테이블 Comment 설정 SQL - course
+COMMENT ON TABLE course IS '강좌';
+
+-- 컬럼 Comment 설정 SQL - course.c_cousreID
+COMMENT ON COLUMN course.c_cousreID IS '강좌번호';
+
+-- 컬럼 Comment 설정 SQL - course.c_name
+COMMENT ON COLUMN course.c_name IS '강좌명';
+
+-- 컬럼 Comment 설정 SQL - course.c_credit
+COMMENT ON COLUMN course.c_credit IS '학점';
+
+-- 컬럼 Comment 설정 SQL - course.c_year
+COMMENT ON COLUMN course.c_year IS '연도';
+
+-- 컬럼 Comment 설정 SQL - course.c_semester
+COMMENT ON COLUMN course.c_semester IS '학기';
+
+-- 컬럼 Comment 설정 SQL - course.c_time
+COMMENT ON COLUMN course.c_time IS '강의시간';
+
+-- 컬럼 Comment 설정 SQL - course.c_capacity
+COMMENT ON COLUMN course.c_capacity IS '수강인원';
+
+-- 컬럼 Comment 설정 SQL - course.p_professorID
+COMMENT ON COLUMN course.p_professorID IS '교수번호';
+
+-- Foreign Key 설정 SQL - course(p_professorID) -> professor(p_professorID)
+ALTER TABLE course
+    ADD CONSTRAINT FK_course_p_professorID_professor_p_professorID FOREIGN KEY (p_professorID)
+        REFERENCES professor (p_professorID) ;
+
+-- Foreign Key 삭제 SQL - course(p_professorID)
+-- ALTER TABLE course
+-- DROP CONSTRAINT FK_course_p_professorID_professor_p_professorID;
+
+
+-- eno Table Create SQL
+-- 테이블 생성 SQL - eno
+CREATE TABLE eno
+(
+    eno            VARCHAR2(20)    NOT NULL, 
+    s_studentID    VARCHAR2(20)    NOT NULL, 
+    c_cousreID     VARCHAR2(50)    NOT NULL, 
+    g_score        NUMBER          NULL   
+);
+
+-- 테이블 Comment 설정 SQL - eno
+COMMENT ON TABLE eno IS '수강';
+
+-- 컬럼 Comment 설정 SQL - eno.eno
+COMMENT ON COLUMN eno.eno IS '수강내역';
+
+-- 컬럼 Comment 설정 SQL - eno.s_studentID
+COMMENT ON COLUMN eno.s_studentID IS '학번';
+
+-- 컬럼 Comment 설정 SQL - eno.c_cousreID
+COMMENT ON COLUMN eno.c_cousreID IS '강좌번호';
+
+-- 컬럼 Comment 설정 SQL - eno.g_score
+COMMENT ON COLUMN eno.g_score IS '성적';
+
+-- Foreign Key 설정 SQL - eno(c_cousreID) -> course(c_cousreID)
+ALTER TABLE eno
+    ADD CONSTRAINT FK_eno_c_cousreID_course_c_cousreID FOREIGN KEY (c_cousreID)
+        REFERENCES course (c_cousreID) ;
+
+-- Foreign Key 삭제 SQL - eno(c_cousreID)
+-- ALTER TABLE eno
+-- DROP CONSTRAINT FK_eno_c_cousreID_course_c_cousreID;
+
+-- Foreign Key 설정 SQL - eno(s_studentID) -> student(s_studentID)
+ALTER TABLE eno
+    ADD CONSTRAINT FK_eno_s_studentID_student_s_studentID FOREIGN KEY (s_studentID)
+        REFERENCES student (s_studentID) ;
+
+-- Foreign Key 삭제 SQL - eno(s_studentID)
+-- ALTER TABLE eno
+-- DROP CONSTRAINT FK_eno_s_studentID_student_s_studentID;
+
+
+COMMIT;

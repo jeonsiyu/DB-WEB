@@ -1,5 +1,5 @@
-DB 설계
-ntity : 객체 Relationship : 관계 Diagram: 그림
+DB 설계 (Entity Relationship Diagram)
+Entity : 객체 Relationship : 관계 Diagram: 그림
 
 요구분석 -   설계   -   구현  -  테스트  - 유지보수
 ----------     ------      ------                  ---------
@@ -15,7 +15,8 @@ ntity : 객체 Relationship : 관계 Diagram: 그림
 마름모 1:N의 관계(?)
 N:M의 관계(다대다의 관계)
 -> 1:N 반대로 N:1의 관계가 형성될 경우 따로 관계에 대해 따로 테이블을 만들어줘야함
- 
+-> 기본키가 참조키로 들어간다 
+
 비식별관계: PK와 FK가 다르게 되어있는 /식별 관계 : PK이자 FK인 경우 
 
 https://aquerytool.com/

@@ -1,15 +1,15 @@
 -- join : 분리된 테이블을 합쳐서 검색
 
-테이블을 분리시키는 이유
+# 테이블을 분리시키는 이유
 - '정규화'라는 기법이 있음 -> 튜닝 같은..
 - DB의 성능을 높이고, 테이터의 중복을 피하기 위해(?)
 
-FOREIGN : F.K 참조키
+# FOREIGN : F.K 참조키
 
-JOIN의 특성 : 특정 테이블에 기본키가 다른 테이블에 참조키로 되어있어야 한다.
+# JOIN의 특성 : 특정 테이블에 기본키가 다른 테이블에 참조키로 되어있어야 한다.
 -> 테이블을 구성할 때 기본키와 참조키 잘 보기
 
--- 조인 종류: 내부 조인(inner join), 외부조인(outer join)
+-- 조인 종류: 내부 조인(inner join), 외부조인(outer join) -> 실제로는 내부 조인을 훨씬 많이 씀
 -- 조인을 사용하여 한꺼번에 출력 (equl ={동등}조인)-> 내부 조인
 
 select * from employee, department
@@ -18,9 +18,54 @@ select * from employee, department
             
 select employee.ename, department.dname, employee.dno 
         from employee, department
-        where employee.dno = department.dno;
+        where employee.dno = department.dno;   -> ex)' a = b ' equl을 사용하면 무조건 써줘야하는 문법느낌의 양식임
         
---테이블명이 길 경우 별칭 사용
+-- 테이블명이 길 경우 별칭 사용
 select e.ename, d.dname, e.dno, d.loc
         from employee e, department d
         where e.dno = d.dno and e.eno=7788;
+
+# natural 조인(자연 조인) : 자동으로 중복된 컬럼 제거
+--> select tablel.column, table2.column
+	trom tablel NATURAL join table2;  --> 다른 데이터베이스에도 쓸 수 있는 양식..?
+--> select eno, ename, dname, dno
+     	from employee e natural join department d
+    	where e.eno = 7788;
+
+# join using(컬럼)
+Select eno, ename, dname, dno
+    from employee e join department d
+    using(dno) where e.eno = 7788;
+
+# join ~ on
+select e.eno, e.ename, d.dname, e.dno
+    from employee e join department d
+    on e.dno = d.dno where e.eno=7788;
+
+-->>>>>> 결과는 다 똑같은 문법적으로 다름 ( equl 조인과 nutural join이 최근에 많이쓰는 형식)
+-------------------------->  컬럼의 중복을 처리해주냐 아니냐에 따라 컬럼명을 안적어도 오류가 안남.
+-- equl조인 = join ~ on / natural조인 =join using조인
+
+# 내부 조인 :non-equi join
+-- <, >, <=, >=, between a and b : '=' 조건을 사용 x
+select ename, salary, grade
+    from employee, salgrade
+    where salary between losal and hisal;
+
+-- 원래 내부 조인은 F.K와 P.K 관계가 있어야 하지만, 없이도 내부 조인을 할 경우 사용
+
+# 3개 이상 테이블 조인하기
+select e.ename, d.dname, e.salary, s.grade
+    from employee e, department d, salgrade s
+    where e.dno = d.dno 
+    and salary between losal and hisal;
+
+# 외부 조인
+-- left outer join, right outer join, full outer join 
+각각 왼쪽               오른쪽              양쪽 모두 null값을 표현해줌
+
+-- left outer join, right outer join, full outer join
+select e.ename as "사원", m.ename as "관리자"
+    from smployes e left outer join employee m
+    on e.manager=m.eno;
+    -- 셀프조인..? 테이블이 같은거라서 그럼..?
