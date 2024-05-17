@@ -1,0 +1,79 @@
+<게임>
+
+'G_0001', 'Stardew Valley', 'You've inherited your grandfather's old farm plot in Stardew Valley.', 
+	'2016/02/27', 'ConcernedApe', '시뮬레이션', 16000, 'Windows'
+
+'G_0002', 'Destiniy Guardians', 'Your journey is just beginning, Guardian! Welcome to the Light and Darkness saga.', 
+	'2017/09/06', 'Bungie', 'MMORPG', 0, 'PS5'
+
+'G_0003', 'Destiniy', 'We stared out at the galaxy and knew that it was our destiny to walk in the light of other stars.', 
+	'2014/09/09', 'Bungie', 'FPS', 0, 'PS3'
+
+'G_0004', 'Little Nightmares', 'Immerse yourself in the unsettling world of Little Nightmares and help a tough young kid known as Six tiptoe safely through the shadows of the Maw and escape to freedom.',
+	 '2017/04/28', 'Tarsier Studios', '호러', 16000, 'Windows'
+
+'G_0005', 'Little Nightmares II', 'With Six, the girl in a yellow raincoat, as his guide, Mono sets out to discover the dark secrets of The Signal Tower and save Six from her terrible fate.',
+	 '2021/02/10', 'Tarsier Studios', '호러', 32800, 'Windows'
+
+'G_0006', 'Halo: Reach', 'REMEMBER WHERE IT ALL BEGAN. REMEMBER REACH.', 
+	'2010/09/14', 'Bungie', 'FPS', 13400, 'Xbox'
+
+'G_000A3', 'Halo 3: ODST', ' these troopers are the best of the best. And saving New Mombasa could be the most important mission of the war...', 
+	'2009/09/22', 'Bungie', 'FPS', 12000, 'Xbox'
+
+'G_0007', 'Pathways into Darkness', ' ', 
+	'1993/08/12', 'Bungie', 'FPS', 500000, 'Mac'
+
+'G_0008', 'Warframe', 'Come Tenno, you must join the war.', 
+	'2013/03/25', 'Digital Extremes', 'TPS', 0, 'Windows'
+
+'G_0009', 'Bioshock', 'Somewhere, beyond the sea...', 
+	'2007/08/21', 'Digital Extremes', 'FPS', 40000, 'PS3'
+
+'G_00A0', 'Don't Starve', 'Don’t Starve is an uncompromising wilderness survival game full of science and magic.', 
+	'2013/04/24', 'Klei Entertainment', '시뮬레이션', 10500, 'Windows'
+
+'G_00A1', 'Don't Starve Together', 'Don't Starve Together is the standalone multiplayer expansion of the uncompromising wilderness survival game, Don't Starve.', 
+	'2016/04/22', 'Klei Entertainment', '시뮬레이션', 15500, 'Windows'
+
+'G_00B1', 'Oxygen Not Included', 'Oxygen Not Included is a space-colony simulation game.', 
+	'2019/07/31', 'Klei Entertainment', '시뮬레이션', 26000, 'Windows'
+
+'G_00A2', 'party Aimals', '협동 및 배틀 로얄 요소를 추가한 캐쥬얼 대전 액션 게임.
+	동물 캐릭터들을 조작해 상대를 장외시키거나 다양한 미션을 수행해야 합니다.',
+	'2023/09/20', 'Recreate Games', '액션', 25900, 'Windows'
+
+'G_0011', 'Overcooked1', '1~4명이 즐길 수 있는협동 요리게임. 
+     팀으로 일하면서 당신과 당신과 동료 셰프는 손님들이 몰려들기 전에 다양하고 
+     맛있는 주문을 준비하고 요리하고 서빙해야 합니다.', '2016/08/04', 'Ghost Town Games Ltd.',
+     '캐쥬얼', 18000, Windows'
+
+'G_0012', 'Overcooked2', '1~4명이 즐길 수 있는협동 요리게임. 
+     팀으로 일하면서 당신과 당신과 동료 셰프는 손님들이 몰려들기 전에 다양하고 
+     맛있는 주문을 준비하고 요리하고 서빙해야 합니다.', '2018/08/08', 'Ghost Town Games Ltd.',
+     '캐쥬얼', 26000, Windows'
+
+'G_0013', 'Ori and the Will of the Wisps', '작은 정령 '오리'의 모험', '2020/11/12', 'Moon Studios GmbH',
+'액션', 29900, 'Windows'
+
+'G_0014', 'Monster Hunter: World', '헌터가 되어 다양한 환경에 서식하는 몬스터를 사냥하는 액션 게임
+      몬스터를 사냥하고 입수한 소재를 이용해 더 강한 무기와 방어구를 만들고,
+      더욱 강력한 몬스터에 도전해 나갑니다.', '2018/08/09', 'CAPCOM', '액션', 34900, 'Windows'
+
+'G_0015', ' It Takes Two', ' ', '2021/03/26', 'Hazelight Studios', '어드벤처', 44000, 'Windows'
+
+'G_0016', 'planet coaster', '놀이공원을 만들어 관람객을 유치하고, 이에 대한 수익금으로 놀이기구 설치,
+ 상점과 매점 설치,
+     공원 장식, 직원 고용 등에 투자하는 경영 시뮬레이션', '2016/11/08', 'Frontier Developments', '시뮬레이션', 48750, 'Windows'
+
+'G_0017', 'planet zoo', '실감나는 서식지를 건설하고, 동물원을 관리하고, 생각하고 느끼고 
+      여러분이 창조한 세계를 탐험하는 경영 시뮬레이션', '2019/11/05', 'Frontier Developments', '시뮬레이션', 46000, 'Windows'
+
+'G_0018', 'PUBG: BATTLEGROUNDS', '다양한 전장에서 전략적 위치를 선점하고 무기와 장비를 확보해 
+      최후의 1인이 되기 위한 생존의 사투를 펼칩니다.', '2017/12/21', 'KRAFTON, Inc.', '배틀로얄', 0, 'Windows'
+
+'G_0019', 'Unpacking', '상자에서 짐을 꺼내 새집에 맞게 배치하는 친숙한 체험에 대한 명상적 퍼즐 게임', '2021/11/02',
+'Witch Beam', '캐쥬얼', 20500, 'Windows'
+
+'G_0020', '화이트 데이(학교라는 이름의 미궁)', '3월 13일 밤의 고등학교에서 펼쳐지는 무서운 이야기를 다룬 풀 3D 그래픽의 호러 어드벤처 게임      미쳐버린 수위. 각종 귀신들과 초자연적 공포와 위험으로부터 몸을 지키고,
+      학교의 비밀을 풀어내야 합니다.', '2017/08/23', '손노리', '호러', 32000, 'Windows'

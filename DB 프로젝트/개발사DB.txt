@@ -1,0 +1,28 @@
+<개발사>
+'D_0001', 'ConcernedApe', '2012', 'https://www.stardewvalley.net/'
+
+'D_0002', 'Tarsier Studios', 2005, 'https://tarsier.se/'
+
+'D_0003', 'Bungie', 1991, 'https://www.bungie.net/7'
+
+'D_0004', 'Digital Extremes', 1993, 'https://www.digitalextremes.com/'
+
+'D_0005', 'Klei Entertainment', 2005, 'https://klei.com/'
+
+'D_0010', ' Recreate Games', ' ', 'https://recreate.games/en/#intro'
+
+'D_0011', 'Ghost Town Games Ltd.', ' ', 'https://ghosttowngames.com/'
+
+'D_0013', 'Moon Studios GmbH', 2010, 'https://www.orithegame.com/moon-studios/'
+
+'D_0014', 'CAPCOM', 1979, 'https://www.capcom.co.jp/'
+
+'D_0015', 'Hazelight Studios', 2014, 'https://www.hazelight.se/'
+
+'D_0016', 'Frontier Developments', 1994, 'https://www.frontier.co.uk/'
+
+'D_0018', 'KRAFTON, Inc.', 2007, 'https://www.krafton.com/'
+
+'D_0019', 'Witch Beam', 2007, 'https://www.unpackinggame.com/'
+
+'D_0020', '손노리', 1992', ' '

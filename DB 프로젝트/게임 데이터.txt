@@ -1,0 +1,187 @@
+1) party Aimals
+- 개발사 ID : D_0010
+- 개발사 이름 : Recreate Games
+- 설립연도 : 
+- 개발사웹사이트 : https://recreate.games/en/#intro
+
+- 게임ID:
+- 게임제목: party Aimals
+- 설명 : 협동 및 배틀 로얄 요소를 추가한 캐쥬얼 대전 액션 게임.
+	   동물 캐릭터들을 조작해 상대를 장외시키거나 다양한 미션을 수행해야 합니다.
+- 출시일 : 2023년 9월 20일
+- 개발사 : Recreate Games
+- 장르 : 액션
+- 가격 : 25.900
+- 지원플랫폼 : Windows
+
+
+2) Overcooked1
+- 개발사 ID : D_0011,
+- 개발사 이름 : Ghost Town Games Ltd.
+- 설립연도 :
+- 개발사웹사이트 : https://ghosttowngames.com/
+
+- 게임ID : G_0011
+- 게임제목: Overcooked1
+- 설명 : 1~4명이 즐길 수 있는협동 요리게임. 
+	  팀으로 일하면서 당신과 당신과 동료 셰프는 손님들이 몰려들기 전에 다양하고 
+	  맛있는 주문을 준비하고 요리하고 서빙해야 합니다.
+
+- 출시일 : 2016년 8월 4일
+- 개발사 이름 : Ghost Town Games Ltd.
+- 장르 : 캐쥬얼
+- 가격 : 18000
+- 지원플랫폼 : Windows
+
+
+3) Overcooked2
+- 개발사 ID : D_0012
+- 개발사 이름 : Ghost Town Games Ltd.
+- 설립연도 : 
+- 개발사웹사이트 : https://ghosttowngames.com/
+
+-게임ID : G_0012
+- 게임제목 : Overcooked1
+- 설명 : 1~4명이 즐길 수 있는협동 요리게임. 
+	  팀으로 일하면서 당신과 당신과 동료 셰프는 손님들이 몰려들기 전에 다양하고 
+	  맛있는 주문을 준비하고 요리하고 서빙해야 합니다.
+
+- 출시일 : 2018년 8월 8일
+- 개발사 이름 : Ghost Town Games Ltd.
+- 장르 : 캐쥬얼
+- 가격 : 26000
+- 지원플랫폼 : Windows
+
+
+4) Ori and the Will of the Wisps (오리와 도깨비불)
+- 개발사 ID : D_0013
+- 개발사 이름 : Moon Studios GmbH
+- 설립연도 : 2010년
+- 개발사웹사이트 : https://www.orithegame.com/moon-studios/
+
+- 게임ID : G_0013
+- 게임제목 : Ori and the Will of the Wisps
+- 설명 : 작은 정령 '오리'의 모험
+- 출시일 :  2020년 11월 12일
+- 개발사 이름 :  Moon Studios GmbH
+- 장르 : 액션
+- 가격 : 29.900
+- 지원플랫폼 : Windows
+
+
+5) Monster Hunter: World
+- 개발사 ID : D_0014
+- 개발사 이름 : CAPCOM
+- 설립연도 : 1979년 5월 30일 
+- 개발사웹사이트 : https://www.capcom.co.jp/
+
+- 게임ID : G_0014
+- 게임제목 : Monster Hunter: World
+- 설명 : 헌터가 되어 다양한 환경에 서식하는 몬스터를 사냥하는 액션 게임
+	   몬스터를 사냥하고 입수한 소재를 이용해 더 강한 무기와 방어구를 만들고,
+	   더욱 강력한 몬스터에 도전해 나갑니다.
+- 출시일 :  2018년 8월 9일
+- 개발사 이름 : CAPCOM
+- 장르 : 액션 
+- 가격 : 34900
+- 지원플랫폼 : Windows
+
+
+6) It Takes Two
+- 개발사 ID : D_0015
+- 개발사 이름 : Hazelight Studios
+- 설립연도 : 2014년
+- 개발사웹사이트 : https://www.hazelight.se/
+
+- 게임ID : G_0015
+- 게임제목 : It Takes Two
+- 설명 : 
+- 출시일 : 2021년 3월 26일
+- 개발사 이름 : Hazelight Studios
+- 장르 : 어드벤처
+- 가격 : 44000
+- 지원플랫폼 : Windows
+
+
+7) planet coaster
+- 개발사 ID : D_0016
+- 개발사 이름 : Frontier Developments
+- 설립연도 : 1994년 1월 28일
+- 개발사웹사이트 : https://www.frontier.co.uk/
+
+- 게임ID : G_0016
+- 게임제목 : planet coaster
+- 설명 : 놀이공원을 만들어 관람객을 유치하고, 이에 대한 수익금으로 놀이기구 설치, 상점과 매점 설치,
+	  공원 장식, 직원 고용 등에 투자하는 경영 시뮬레이션
+- 출시일 : 2016년 11월 18일
+- 개발사 이름 : Frontier Developments
+- 장르 : 시뮬레이션
+- 가격 : 48750원
+- 지원플랫폼 : Windows
+
+
+8) planet zoo
+- 개발사 ID : D_0017
+- 개발사 이름 : Frontier Developments
+- 설립연도 : 1994년 1월 28일
+- 개발사웹사이트 : https://www.frontier.co.uk/
+
+- 게임ID : G_0017
+- 게임제목 : planet zoo
+- 설명 : 실감나는 서식지를 건설하고, 동물원을 관리하고, 생각하고 느끼고 
+	   여러분이 창조한 세계를 탐험하는 경영 시뮬레이션
+- 출시일 : 2019년 11월 5일
+- 개발사 이름 : Frontier Developments
+- 장르 : 시뮬레이션
+- 가격 : 46000원
+- 지원플랫폼 : Windows
+
+
+9) PUBG: BATTLEGROUNDS
+- 개발사 ID : D_0018
+- 개발사 이름 : KRAFTON, Inc.
+- 설립연도 : 2007년 3월 26일
+- 개발사웹사이트 : https://www.krafton.com/
+
+- 게임ID : G_0018
+- 게임제목 : PUBG: BATTLEGROUNDS
+- 설명 : 다양한 전장에서 전략적 위치를 선점하고 무기와 장비를 확보해 
+	   최후의 1인이 되기 위한 생존의 사투를 펼칩니다.
+- 출시일 : 2017년 12월 21일
+- 개발사 이름 : KRAFTON, Inc.
+- 장르 : 배틀 로얄
+- 가격 : 무료
+- 지원플랫폼 : Windows
+
+
+10) Unpacking
+- 개발사 ID : D_0019
+- 개발사 이름 : Witch Beam
+- 설립연도 : 2007년 3월 26일
+- 개발사웹사이트 : https://www.unpackinggame.com/
+
+- 게임ID : G_0019
+- 게임제목 : Unpacking
+- 설명 : 상자에서 짐을 꺼내 새집에 맞게 배치하는 친숙한 체험에 대한 명상적 퍼즐 게임
+- 출시일 : 2021년 11월 2일
+- 개발사 이름 : Witch Beam
+- 장르 : 캐쥬얼
+- 가격 : 20500원
+- 지원플랫폼 : Windows
+
+
+11) 화이트데이 (학교라는 이름의 미궁)
+- 개발사 ID : D_0020
+- 개발사 이름 : 손노리
+- 설립연도 : 1992년 7월 14일
+- 개발사웹사이트 : 
+
+- 게임ID : G_0020
+- 게임제목 : 화이트 데이(학교라는 이름의 미궁)
+- 설명 : 3월 13일 밤의 고등학교에서 펼쳐지는 무서운 이야기를 다룬 풀 3D 그래픽의 호러 어드벤처 게임	   미쳐버린 수위. 각종 귀신들과 초자연적 공포와 위험으로부터 몸을 지키고,
+	   학교의 비밀을 풀어내야 합니다.
+- 출시일 : 2017년 8월 23일
+- 개발사 이름 : 손노리
+- 장르 : 호러
+- 가격 : 32000
+- 지원플랫폼 : Windows

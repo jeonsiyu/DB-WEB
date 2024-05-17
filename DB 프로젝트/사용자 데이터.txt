@@ -1,0 +1,25 @@
+<사용자 데이터>
+insert into player values ('u_0001', 'hyeri1',  '혜링', '김혜리', 'hyeri123@naver.com',  to_date('2020/06/12', 'yyyy/mm/dd') );
+insert into player values ('u_0002', 'yeongjun12',  '영주니', '김영준', 'yeongjun05@naver.com',  to_date('2019/07/05', 'yyyy/mm/dd') );
+insert into player values ('u_0003', 'yeona37',  '연아킴', '김연아', 'yeona00@naver.com',  to_date('2015/05/07', 'yyyy/mm/dd') );
+insert into player values ('u_0004', 'happywow00',  '검팡', '양예성', 'yeseongo_o'@naver.com',  to_date('2021/08/10', 'yyyy/mm/dd') );
+insert into player values ('u_0005', 'missingyou78',  '미씽이', '유미래', 'U_mi22@gmail.com',  to_date('2016/12/25', 'yyyy/mm/dd') );
+insert into player values ('u_0006', 'esupa11',  '이수파', '박재환', 'e_suuu11@gmail.com',  to_date('2018/10/30', 'yyyy/mm/dd') );
+insert into player values ('u_0007', 'zizijonjon',  'zi존현수', '윤현수', 'hyeonsu@gmail.com',  to_date('2022/03/22', 'yyyy/mm/dd') );
+insert into player values ('u_0008', 'suhogood',  '수호를수호해', '전수호', 'suho_hosu@nate.com',  to_date('2024/05/17', 'yyyy/mm/dd') );
+insert into player values ('u_0009', 'stella123',  'stella', '신채은', 'sinstella11@nate.com',  to_date('2022/07/04', 'yyyy/mm/dd') );
+insert into player values ('u_0010', 'parkhaha',  '하하린린', '박하린', 'parkgarin@nate.com',  to_date('2017/02/14', 'yyyy/mm/dd') );
+insert into player values ('u_0011', 'ikki',  '이끼', '이기훈', 'ikki123@naver.com', to_date('2020/07/12', 'yyyy/mm/dd') );
+insert into player values ('u_0012', 'oongchi',  '웅치', '복은서', 'oongchi@@daum.net',  to_date('2019/07/05', 'yyyy/mm/dd') );
+insert into player values ('u_0013', 'terter',  '털털', '조재이', 'terter@@gmail.com', to_date('2021/01/05', 'yyyy/mm/dd') );
+insert into player values ('u_0014', 'ssungtak',  '쓩탁', '명수민', 'ssungtak@naver.com', to_date('2019/04/21', 'yyyy/mm/dd') );
+insert into player values ('u_0015', 'mucheon',  '무천도사', '송준서', 'mucheon@@daum.net', to_date('2020/12/05', 'yyyy/mm/dd') );
+insert into player values ('u_0015', 'dokdo7878',  '독도는록시땅', '양승민', 'dokdo7878@@gmail.com', to_date('2023/07/01', 'yyyy/mm/dd') );
+insert into player values ('u_0016', 'mandu',  '만두바락키우스', '김한결', 'mandu@naver.com', to_date('2011/04/13', 'yyyy/mm/dd') );
+insert into player values ('u_0017', 'ncity99',  '뇌출혈씨티', '구하준', 'ncity99@naver.com', to_date('2015/05/05', 'yyyy/mm/dd') );
+insert into player values ('u_0018', 'nonrd1234',  '레오나르도빚갚으리오', '권우주', 'nonrd1234@@daum.net', to_date('2019/06/08', 'yyyy/mm/dd') );
+insert into player values ('u_0019', 'baram55',  '바람과함께살빠지다', '석지훈', 'baram55@naver.com', to_date('2021/09/12', 'yyyy/mm/dd') );
+insert into player values ('u_0020', 'agaristar',  '아가리스타', '심주원', 'agaristar@@gmail.com', to_date('2019/02/02', 'yyyy/mm/dd') );
+nsert into player values ('u_0021', 'creamdoor02',  '슈크림도어가열립니다', '최혁준', 'joonijoon@daum.net',  ',to_date('2022/08/24', 'yyyy/mm/dd') );
+insert into player values ('u_0022', 'bang345',  '은방울', '은정하', 'ejh345@gmail.com',  ',to_date('2023/12/15', 'yyyy/mm/dd') );
+insert into player values ('u_0023', 'ququ22',  '쿠이', '표리아', 'voteria@hanmail.net',  ',to_date('2019/03/01', 'yyyy/mm/dd') );
